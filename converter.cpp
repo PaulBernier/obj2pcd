@@ -45,6 +45,7 @@ void Converter::obj2pcd(const std::string& inputFilename, const std::string& out
 
         std::string v;
         in >> v;
+        if (v != "v") continue;
 
         // Read x y z
         float x, y, z;
